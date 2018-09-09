@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_ten">
+
+    <TextView
+        android:id="@+id/text_list_abast_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        tools:text="04/07/2017"/>
+
+    <TextView
+        android:id="@+id/text_list_abast_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_list_abast_data"
+        style="@style/MediumText"
+        tools:text="R$ 60,00"/>
+
+    <TextView
+        android:id="@+id/text_list_abast_posto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        android:layout_toEndOf="@+id/text_list_abast_valor"
+        tools:text="Posto Shell"/>
+
+    <TextView
+        android:id="@+id/textKmAtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        android:text="@string/km_atual"
+        android:layout_toEndOf="@+id/text_list_abast_posto"/>
+
+    <TextView
+        android:id="@+id/text_list_abast_km_atual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        android:layout_toEndOf="@+id/textKmAtual"
+        tools:text="15.000"/>
+
+    <TextView
+        android:id="@+id/textKmRodada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        android:text="@string/km_rodada"
+        android:layout_toEndOf="@+id/text_list_abast_km_atual" />
+
+    <TextView
+        android:id="@+id/text_list_abast_km_rodada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MediumText"
+        android:layout_toEndOf="@+id/textKmRodada"
+        tools:text="200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/text_list_abast_km_rodada"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginEnd="@dimen/margin_ten"
+        android:background="@color/linkColor" />
+</RelativeLayout>

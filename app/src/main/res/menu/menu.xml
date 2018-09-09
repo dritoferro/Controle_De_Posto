@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_posto"
+        android:title="@string/postos"
+        android:icon="@drawable/gas_station"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_veiculo"
+        android:title="@string/veiculos"
+        android:icon="@drawable/vehicle"
+        app:showAsAction="ifRoom" />
+
+</menu>

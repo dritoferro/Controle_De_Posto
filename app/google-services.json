@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "886470360082",
+    "firebase_url": "https://controle-de-posto.firebaseio.com",
+    "project_id": "controle-de-posto",
+    "storage_bucket": "controle-de-posto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886470360082:android:aec3a046626d7d5a",
+        "android_client_info": {
+          "package_name": "tagliaferro.adriano.projetoposto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886470360082-57nm1sivr05ch0pomljankse2e7aqrbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tagliaferro.adriano.projetoposto",
+            "certificate_hash": "fd977af8bf54bc107f895e09820fc953e55b2460"
+          }
+        },
+        {
+          "client_id": "886470360082-oscmrg0gfdcup6ndm5sjmje2p9jufi2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0btlMTd1hddXfmvGYPSHU_Xu4hnyLd9o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886470360082-oscmrg0gfdcup6ndm5sjmje2p9jufi2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

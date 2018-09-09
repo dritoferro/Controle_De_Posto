@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_abastecimento"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textViewAbastecimento"
+            style="@style/LargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_activity_abastecimento"
+            android:layout_centerHorizontal="true"
+            android:text="@string/abastecimentos" />
+
+        <ImageView
+            android:id="@+id/img_abastecimento_veiculo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewAbastecimento"
+            android:layout_margin="@dimen/dimen_20"
+            android:layout_toEndOf="@+id/textViewVeicComb"
+            android:contentDescription="@string/text_veiculo_imagem" />
+
+        <Button
+            android:id="@+id/btn_abastecimento_data"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAbastecimento"
+            android:layout_marginTop="@dimen/dimen_75"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="@string/mock_data" />
+
+        <TextView
+            android:id="@+id/textViewChooseVeiculo"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_abastecimento_data"
+            android:text="@string/escolha_o_veiculo" />
+
+        <Spinner
+            android:id="@+id/spinner_abastecimento_veiculo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/btn_abastecimento_data"
+            android:layout_marginEnd="@dimen/margin_ten"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewChooseVeiculo" />
+
+        <TextView
+            android:id="@+id/textViewVeicComb"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_abastecimento_veiculo"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="@string/escolha_o_combustivel" />
+
+        <Spinner
+            android:id="@+id/spinner_abastecimento_veicComb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/spinner_abastecimento_veiculo"
+            android:layout_marginEnd="@dimen/margin_ten"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewVeicComb" />
+
+        <TextView
+            android:id="@+id/textViewKmAtual"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_abastecimento_veicComb"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="@string/km_atual" />
+
+        <EditText
+            android:id="@+id/edt_abastecimento_kmVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_abastecimento_veicComb"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewKmAtual"
+            android:hint="@string/mock_km"
+            android:inputType="number"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textViewAbastValor"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewKmAtual"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="@string/valor" />
+
+        <EditText
+            android:id="@+id/edt_abastecimento_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_abastecimento_kmVeiculo"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_130"
+            android:layout_toEndOf="@+id/textViewAbastValor"
+            android:hint="@string/exemplo_valor"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textViewChoosePosto"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAbastValor"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="@string/escolha_o_posto" />
+
+        <Spinner
+            android:id="@+id/spinner_abastecimento_posto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edt_abastecimento_valor"
+            android:layout_marginEnd="@dimen/margin_ten"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_toEndOf="@+id/textViewChoosePosto" />
+
+        <TextView
+            android:id="@+id/textViewPrecoLitro"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_abastecimento_posto"
+            android:text="@string/valor_por_litro" />
+
+        <EditText
+            android:id="@+id/edt_abastecimento_precoLitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_abastecimento_posto"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_toEndOf="@+id/textViewPrecoLitro"
+            android:hint="@string/mock_precoLitro"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/btn_abastecimento_salvar"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edt_abastecimento_precoLitro"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:background="@color/colorAccent"
+            android:text="@string/salvar"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+</ScrollView>

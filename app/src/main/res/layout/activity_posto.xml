@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_posto"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textViewPosto"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_activity_posto"
+            android:text="@string/postos_cadastrados"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner_postos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/textViewPosto"
+            android:layout_margin="@dimen/margin_ten" />
+
+        <EditText
+            android:id="@+id/edt_posto_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_postos"
+            android:layout_margin="@dimen/margin_ten"
+            android:hint="@string/posto_name"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner_posto_comb1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/edt_posto_nome"
+            android:layout_margin="@dimen/margin_ten" />
+
+        <EditText
+            android:id="@+id/edt_posto_preco_comb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edt_posto_nome"
+            android:layout_marginEnd="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/spinner_posto_comb1"
+            android:hint="@string/valor_por_litro"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner_posto_comb2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/spinner_posto_comb1"
+            android:layout_margin="@dimen/margin_ten" />
+
+        <EditText
+            android:id="@+id/edt_posto_preco_comb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edt_posto_preco_comb1"
+            android:layout_marginEnd="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/spinner_posto_comb1"
+            android:hint="@string/valor_por_litro"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_posto_get_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_posto_preco_comb2"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@color/colorAccent"
+            android:text="@string/obter_localizacao_posto"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btn_posto_salvar"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_posto_get_location"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@color/colorAccent"
+            android:text="@string/salvar"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btn_posto_excluir"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_posto_get_location"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@color/colorAccent"
+            android:text="@string/excluir"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

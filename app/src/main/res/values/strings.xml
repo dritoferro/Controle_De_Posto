@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Controle de Posto</string>
+    <string name="tagFrameVeiculos" translatable="false">Frame_Veiculos</string>
+    <string name="tagFrameAbastecimentos" translatable="false">Frame_Abastecimentos</string>
+    <string name="calendar_dialog_tag" translatable="false">CalendarDialog</string>
+    <string name="veiculos">Veículos</string>
+    <string name="abastecimentos">Abastecimentos</string>
+    <string name="km_rodada">KM Rodada:</string>
+    <string name="km_atual">KM Atual:</string>
+    <string name="veiculo_name_hint">Apelido do veículo</string>
+    <string name="veiculo_comb2">Combustível 2</string>
+    <string name="veiculo_comb1">Combustível 1</string>
+    <string name="text_veiculo_imagem">Imagem do Veículo</string>
+    <string name="postos_cadastrados">Postos Cadastrados</string>
+    <string name="posto_name">Nome do Posto</string>
+    <string name="obter_localizacao_posto">Obter Localização</string>
+    <string name="salvar">SALVAR</string>
+    <string name="valor_por_litro">Valor por Litro</string>
+    <string name="mock_data">18/07/2017</string>
+    <string name="escolha_o_veiculo">Escolha o Veículo:</string>
+    <string name="mock_km">15.000</string>
+    <string name="mock_precoLitro">R$ 3,50</string>
+    <string name="postos">Postos</string>
+    <string name="escolha_o_posto">Escolha o Posto:</string>
+    <string name="select">Selecione</string>
+    <string name="comb_etanol">Etanol</string>
+    <string name="comb_gasolina">Gasolina</string>
+    <string name="comb_gnv">GNV</string>
+    <string name="comb_diesel">Diesel</string>
+    <string name="add_sucesso">Adicionado com sucesso</string>
+    <string name="up_sucesso">Atualizado com sucesso</string>
+    <string name="excluir">EXCLUIR</string>
+    <string name="warning">Aviso</string>
+    <string name="msg_delete_veiculo">Deseja deletar este veículo ?</string>
+    <string name="yes">Sim</string>
+    <string name="del_sucesso">Excluído com sucesso</string>
+    <string name="erro_update">Algo saiu errado na atualização</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+    <string name="ok">OK</string>
+    <string name="error_veiculo">O nome do veículo está em branco e/ou não há um combustível 1 selecionado.</string>
+    <string name="error_posto">O nome do posto não está preenchido e/ou não foi selecionado ao menos um combustível e informado seu valor</string>
+    <string name="msg_exc_posto">Tem certeza que deseja excluir este posto ?</string>
+    <string name="error_abastecimento">Você deve selecionar um veículo, um posto e informar a km atual e o valor do litro</string>
+    <string name="zero_veiculo">Cadastre um veículo primeiro, por favor</string>
+    <string name="zero_posto">Cadastre um posto primeiro, por favor</string>
+    <string name="escolha_o_combustivel">Escolha o combustível:</string>
+    <string name="selecione_data">Selecione uma data</string>
+    <string name="select_img_veiculo">Deseja usar a camera ou selecionar a foto na galeria ?</string>
+    <string name="erro_insert">Algo saiu errado no cadastro</string>
+    <string name="teste">teste</string>
+    <string name="error_nome_veiculo">O nome do veículo deve ser preenchido primeiro</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_galeria">Galeria</string>
+    <string name="valor">Valor:</string>
+    <string name="exemplo_valor">R$ 50,00</string>
+    <string name="update_abast_key">veiculo_abast_key</string>
+    <string name="del_abastecimento">Tem certeza que deseja excluir este abastecimento ?</string>
+    <string name="km_mes_atual">Km Mês Atual:</string>
+    <string name="valor_mes_atual">Valor Mês Atual:</string>
+    <string name="msg_change_location">A localização do posto só deve ser obtida se estiver presente no local, deseja salvar a localização atual ?</string>
+    <string name="gps_rede_desabilitado">O GPS e a conexão com a internet devem estar habilitados para obter os dados.</string>
+    <string name="localizacao_obtida_sucesso">Localização obtida com sucesso</string>
+    <string name="msg_confirm_location">A localização do posto é:</string>
+    <string name="ask_signal">\?</string>
+    <string name="location_posto_atual">Localização atual:</string>
+    <string name="pref_send_data_firebase" translatable="false">Data</string>
+
+
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="pref_token" translatable="false">token_value</string>
+    <string name="pref_token_key" translatable="false">token2_value_key</string>
+    <string name="pref_token_sent" translatable="false">token2_sent</string>
+    <string name="widget_km_rodada">Km rodada neste mês</string>
+    <string name="widget_valor_mes">Valor gasto neste mês</string>
+    <string name="widget_btn_add">ADD</string>
+    <string name="key_widgets_id" translatable="false">widgets_id</string>
+
+    <string-array name="combs">
+        <item>@string/select</item>
+        <item>@string/comb_etanol</item>
+        <item>@string/comb_gasolina</item>
+        <item>@string/comb_gnv</item>
+        <item>@string/comb_diesel</item>
+    </string-array>
+</resources>

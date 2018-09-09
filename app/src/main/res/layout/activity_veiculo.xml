@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_veiculo"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginBottom="@dimen/margin_ten"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textViewVeiculos"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_activity_veiculo"
+            android:text="@string/veiculos" />
+
+        <Spinner
+            android:id="@+id/spinner_veiculos"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/toolbar_activity_veiculo"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewVeiculos" />
+
+        <EditText
+            android:id="@+id/edt_veiculo_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_veiculos"
+            android:layout_margin="@dimen/dimen_20"
+            android:hint="@string/veiculo_name_hint" />
+
+        <TextView
+            android:id="@+id/textViewComb1"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_veiculo_nome"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/veiculo_comb1" />
+
+        <Spinner
+            android:id="@+id/spinner_veiculo_comb1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edt_veiculo_nome"
+            android:layout_margin="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewComb1" />
+
+        <TextView
+            android:id="@+id/textViewComb2"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_veiculo_comb1"
+            android:layout_marginStart="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/veiculo_comb2" />
+
+        <Spinner
+            android:id="@+id/spinner_veiculo_comb2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/spinner_veiculo_comb1"
+            android:layout_margin="@dimen/margin_ten"
+            android:layout_toEndOf="@+id/textViewComb2" />
+
+        <TextView
+            android:id="@+id/textViewImgVeiculo"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_veiculo_comb2"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/text_veiculo_imagem" />
+
+        <ImageView
+            android:id="@+id/img_veiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewImgVeiculo"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_75"
+            android:layout_toStartOf="@+id/btn_veiculo_salvar"
+            android:contentDescription="@string/text_veiculo_imagem"
+            android:scaleType="fitXY"
+            android:src="@drawable/sample"/>
+
+        <Button
+            android:id="@+id/btn_veiculo_salvar"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewImgVeiculo"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@color/colorAccent"
+            android:text="@string/salvar"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btn_veiculo_excluir"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_veiculo_salvar"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@color/colorAccent"
+            android:text="@string/excluir"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>
